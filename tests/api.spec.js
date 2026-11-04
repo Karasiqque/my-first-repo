@@ -25,7 +25,7 @@ const newData = {
       additionalneeds: "Breakfast"
     };
 
-test.describe.serial('тест API', () => {
+test.describe.serial('тест API @api', () => {
   test('должна появиться новая бронь', async ({ request }) => {
     const response = await request.post(`${baseurl}/booking`, { data: postData });
     expect(response.status()).toBe(200);
