@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test('test login function', async ({ page }) => {
+test('test login function @ui', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
 await page.locator('#user-name').fill('standard_user');
 await page.getByPlaceholder("Password").fill('secret_sauce');
