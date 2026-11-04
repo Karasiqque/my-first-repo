@@ -26,7 +26,6 @@ const newData = {
     };
 
 test.describe.serial('тест API', () => {
-
   test('должна появиться новая бронь', async ({ request }) => {
     const response = await request.post(`${baseurl}/booking`, { data: postData });
     expect(response.status()).toBe(200);
